@@ -19,14 +19,15 @@ for (let i = 0; i < 2; i++) {
     } else {
         i--;
     }
-    if (personalMovieDB.count < 10) {
-        console.log("Переглянуто мало фільмів");
-    }
-    if (personalMovieDB.count > 10 <= 30) {
-        console.log("Ви класичний глядач");
-    } else if (personalMovieDB >= 50) {
-        console.log("Ви кіноман");
-    }
+}
+if (personalMovieDB.count < 10) {
+    console.log("Переглянуто мало фільмів");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Ви класичний глядач");
+} else if (personalMovieDB.count >= 30) {
+    console.log("Ви кіноман");
+} else {
+    console.log("Помилка");
 }
 
 console.log(personalMovieDB);
